@@ -4,7 +4,7 @@ A simple and user-friendly utility to split an exported ChatGPT HTML file (typic
 
 ## ✨ Features
 
-- **Easy-to-use GUI** for Windows users (just double-click!)
+- **Easy-to-use GUI** (Windows/macOS/Linux via Tkinter)
 - **Cross-platform CLI** for advanced users
 - **Drag-and-drop support** for quick file processing
 - **No external dependencies** - uses only Python's standard library
@@ -29,6 +29,24 @@ A simple and user-friendly utility to split an exported ChatGPT HTML file (typic
    - Click "Browse" to select your exported `chat.html` file
    - Choose your output directory (or use the default `split_chats`)
    - Click "Split Chats" and wait for completion
+
+### Option 1B: macOS GUI
+
+1. Install Python 3.8+ (recommended from `python.org`).
+2. Make the launcher executable:
+   - `chmod +x MacOS/Run_Chat_Splitter.command`
+3. Launch:
+   - Double-click `MacOS/Run_Chat_Splitter.command`, or
+   - Drag your `chat.html` onto it to prefill the path.
+4. If macOS blocks the script (Gatekeeper), Control-click → Open.
+
+### Option 1C: Linux GUI
+
+1. Install Python 3.8+ and Tkinter (e.g., Debian/Ubuntu: `sudo apt-get install -y python3-tk`).
+2. Make the launcher executable:
+   - `chmod +x Linux/run.sh`
+3. Launch:
+   - `./Linux/run.sh` (optionally pass `/path/to/chat.html`).
 
 ### Option 2: Command Line (Cross-platform)
 
