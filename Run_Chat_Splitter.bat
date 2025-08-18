@@ -26,6 +26,3 @@ if %ERRORLEVEL%==0 (
 echo.
 echo If the window closed unexpectedly, ensure Python 3.8+ is installed and on PATH.
 pause
-
-
-
