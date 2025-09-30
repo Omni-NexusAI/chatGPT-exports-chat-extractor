@@ -1,6 +1,6 @@
-# ChatGPT Exports Chat Extractor
+# LLM Exports Chat Extractor
 
-A simple and user-friendly utility to split an exported ChatGPT HTML file (typically named `chat.html`) into individual HTML files for each conversation. Perfect for organizing and managing your ChatGPT conversation history.
+A simple and user-friendly utility to split exported HTML/JSON files from ChatGPT and Claude into individual files for each conversation. Perfect for organizing and managing your conversation history from multiple LLM platforms.
 
 ## ✨ Features
 
@@ -23,12 +23,13 @@ A simple and user-friendly utility to split an exported ChatGPT HTML file (typic
 
 3. **Launch the tool**:
    - **Method A**: Double-click `Run_Chat_Splitter.bat`
-   - **Method B**: Drag your `chat.html` file onto `Run_Chat_Splitter.bat`
+   - **Method B**: Drag your chat file (`chat.html` or `conversations.json`) onto `Run_Chat_Splitter.bat`
 
 4. **Use the GUI**:
-   - Click "Browse" to select your exported `chat.html` file
-   - Choose your output directory (or use the default `split_chats`)
-   - Click "Split Chats" and wait for completion
+   - Select the platform (ChatGPT or Claude) from the dropdown menu.
+   - Click "Browse..." to select your exported chat file.
+   - Choose your output directory.
+   - Click "Run Extractor" and wait for completion.
 
 ### Option 1B: macOS GUI
 
@@ -66,13 +67,23 @@ python chat_extractor.py --help
 
 **Note**: On Windows, you can use `py` instead of `python`. On macOS/Linux, you might need `python3`.
 
-## 📋 How to Export Your ChatGPT Data
+## 📋 How to Export Your Data
+
+### ChatGPT
 
 1. Go to [ChatGPT Settings](https://chat.openai.com/) → Data Controls → Export
 2. Request your data export
 3. Download the ZIP file when ready
 4. Extract the ZIP and locate the `chat.html` file
-5. Use this tool to split it into individual conversations!
+
+### Claude
+
+1. Log in to your Claude account.
+2. Click on your profile icon in the top right corner.
+3. Select "Account Settings".
+4. Click on the "Export Data" button.
+5. You will receive an email with a link to download your data.
+6. Download the ZIP file and extract it to find the `conversations.json` file.
 
 ## 🛠 How It Works
 
@@ -99,7 +110,7 @@ your-output-directory/
 ### Command Line Options
 
 ```bash
-python chat_extractor.py [input_file] [output_dir] [--quiet]
+python llm_exports_chat_extractor.py [input_file] [output_dir] [--quiet]
 ```
 
 - `input_file`: Path to your chat.html (default: `chat.html`)

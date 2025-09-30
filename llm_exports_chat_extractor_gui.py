@@ -16,7 +16,7 @@ from tkinter import filedialog, messagebox
 
 try:
     # Import the core splitter from the CLI module
-    from chat_extractor import split_chat_html
+    from llm_exports_chat_extractor import split_chat_html
 except Exception as import_error:
     split_chat_html = None
     _IMPORT_ERROR = import_error
