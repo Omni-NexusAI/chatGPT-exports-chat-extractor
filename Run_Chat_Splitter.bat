@@ -11,15 +11,15 @@ REM Prefer Windows Python launcher if available
 where py >nul 2>nul
 if %ERRORLEVEL%==0 (
     if defined INPUT_FILE (
-        py -3 chat_extractor_gui.py "%INPUT_FILE%"
+        py -3 llm_exports_chat_extractor_gui.py "%INPUT_FILE%"
     ) else (
-        py -3 chat_extractor_gui.py
+        py -3 llm_exports_chat_extractor_gui.py
     )
 ) else (
     if defined INPUT_FILE (
-        python chat_extractor_gui.py "%INPUT_FILE%"
+        python llm_exports_chat_extractor_gui.py "%INPUT_FILE%"
     ) else (
-        python chat_extractor_gui.py
+        python llm_exports_chat_extractor_gui.py
     )
 )
 

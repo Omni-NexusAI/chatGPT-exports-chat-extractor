@@ -35,3 +35,4 @@ fi
 exec "$PYTHON_BIN" chat_extractor_gui.py "$@"
 
 
+
